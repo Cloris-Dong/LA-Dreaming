@@ -17,7 +17,7 @@
   h1 {
     color: var(--heading);
     position: fixed;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100%;
     text-align: center;
     font-family: fantasy;
@@ -26,8 +26,9 @@
 
   h2 {
     color: var(--subheading);
-    position: static;
-    top: 90px;
+    position: fixed;
+    width: 100%;
+    top: 50px;
     font-family: fantasy;
     text-align: center;
     font-size: 20px;
@@ -48,17 +49,6 @@
     left: 110px;
   }
 
-  .flight {
-    font: Lucida Console;
-    font-size: 30px;
-    background-color: white;
-    width: 530px;
-    position: absolute;
-    text-align: center;
-    top: 305px;
-    right: -230px;
-  }
-
   h5 {
     font: Helvetica;
     color: white;
@@ -66,15 +56,6 @@
     top: 490px;
     left: calc(50% - 280px);
     font-size: 50px;
-  }
-
-  p {
-    font: Helvetica;
-    color: white;
-    position: absolute;
-    top: 490px;
-    left: calc(50% - 650px);
-    font-size: 20px;
   }
 
   h6 {
@@ -86,7 +67,44 @@
     font-size: 20px;
 
   }
-
+  
+  h7{
+    
+  }
+  .flight {
+    font: Lucida Console;
+    font-size: 30px;
+    background-color: white;
+    width: 530px;
+    position: absolute;
+    text-align: center;
+    top: 305px;
+    right: -230px;
+  }
+  
+    .notes{
+    font: Helvetica;
+    color: white;
+    position: absolute;
+    top: 490px;
+    left: calc(50% - 650px);
+    font-size: 20px;
+  }
+  
+  .hill{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 100px;
+  }
+  .opening{
+    font: Helvetica;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+  }
   .images>img[src="mirror.jpeg"] {
     position: absolute;
     width: 300px;
@@ -133,14 +151,24 @@
 </div>
 
 <div class="flight"> Los Angeles Nov25th-----------&gt Nov 28th</div>
+<div class="hill"> 
+  <p class="opening" style="line-height:1.4">
+    "I like the up and down roads in LA."<br>
+    "Because they prevent you from seeing the next block. <br>
+    "and you enjoy having ups and downs in your life without knowing what is ahead" <br>                                                     
+  </p>
+</div>
 <h1>California Dreaming2021</h1>
 <h2> with kristy 🍇 </h2>
 <h3>💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜</h3>
 <h4>🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇🍇</h4>
 <h5>DISAPPEARING</h5>
 <h6> We scootered to the Little Tokyo &amp; The up and down hills almost killed us * 8 * -----------&gt</h6>
+  
 <!-- <h7>🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜🍜</h7> -->
-<p style="line-height:1.4">
+  
+<section class="para">
+  <p class="notes" style="line-height:1.4">
   She called me "Van" cuz the front desk <br>
   didn't know how to pronounciate "Han" 🤣 ⬇️ <br>
   --H E ⬇️ R E - H E R E--<br>
@@ -148,6 +176,9 @@
   --H E R E - H E ⬇️ R E--<br>
   from 🛫 Kristy to 🛬️ Cloris ⬇️ 
 </p>
+  
+</section>
+
 <figure>
   <video controls width="250">
     <source src="Lil Video.mp4" type="video/mp4">
