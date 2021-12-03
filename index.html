@@ -2,7 +2,8 @@
   :root {
     --bg-color: #9966ff;
     --heading: #fc0b89;
-    --subheading: #f93291
+    --subheading: #f93291;
+    --text-bg: rgba(5, 5, 5, 0.5);
   }
 
   body {
@@ -54,7 +55,7 @@
     color: white;
     position: absolute;
     top: 490px;
-    left: calc(50% - 280px);
+    left: calc(50% - 260px);
     font-size: 50px;
   }
 
@@ -71,6 +72,7 @@
   h7 {
     font: Helvetica;
     color: orange;
+    background-color: var(--text-bg);
     position: absolute;
     top: 670px;
     left: calc(50% - 65px);
@@ -87,10 +89,11 @@
     text-align: center;
   }
 
-  .flight {
+  h9 {
     font: Lucida Console;
     font-size: 30px;
-    background-color: white;
+    color: white;
+    background-color: var(--text-bg);
     width: 530px;
     position: absolute;
     text-align: center;
@@ -107,16 +110,11 @@
     font-size: 20px;
   }
 
-  .hill {
-    display: flex;
-    justify-content: center;
+  .opening {
+    font: Helvetica;
     position: absolute;
     left: calc(50% - 275px);
     top: calc(50% - 250px);
-  }
-
-  .opening {
-    font: Helvetica;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -178,16 +176,6 @@
   <img src="Rene.jpg" alt="Rene Magritte.jpg">
 </div>
 
-<div class="flight"> Los Angeles Nov25th-----------&gt Nov 28th</div>
-
-<div class="hill">
-  <p class="opening" style="line-height:1.4">
-    "I like the up and down roads in LA."<br>
-    "Because they prevent you from seeing the next block. <br>
-    "and you enjoy having ups and downs in your life without knowing what is ahead" <br>
-  </p>
-</div>
-
 <h1>California Dreaming2021</h1>
 <h2> with kristy 🍇 </h2>
 <h3>💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜</h3>
@@ -196,9 +184,15 @@
 <h6> We scootered to the Little Tokyo &amp; The up and down hills almost killed us * 8 * -----------&gt</h6>
 <h7>huge fan of Paul Klee &amp; René Magritte</h7>
 <h8>🎨🖼🖼🎨🎨🖼🖼🎨🎨🖼🖼🎨🎨🖼🖼🎨🎨🖼🖼🎨</h8>
+<h9>Los Angeles Nov25th-----------&gt Nov 28th</h9>
 
 <section class="para">
-  <p class="notes" style="line-height:1.4">
+  <p class="opening" style="line-height:1.4; background:var(--text-bg)">
+    "I like the up and down roads in LA."<br>
+    "Because they prevent you from seeing the next block. <br>
+    "and you enjoy having ups and downs in your life without knowing what is ahead" <br>
+  </p>
+  <p class="notes" style="line-height:1.4; background:var(--text-bg)">
     She called me "Van" cuz the front desk <br>
     didn't know how to pronounciate "Han" 🤣 ⬇️ <br>
     --H E ⬇️ R E - H E R E--<br>
@@ -206,7 +200,6 @@
     --H E R E - H E ⬇️ R E--<br>
     from 🛫 Kristy to 🛬️ Cloris ⬇️
   </p>
-
 </section>
 
 <figure>
