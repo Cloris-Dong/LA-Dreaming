@@ -135,12 +135,12 @@
     top: calc(50% + 340px);
   }
 
-  .images>img[src="Lil Tokyo.jpg"] {
+/*   .images>img[src="Lil Tokyo.jpg"] {
     position: absolute;
     width: 150px;
     left: calc(50% + 200px);
     top: 57%;
-  }
+  } */
 
   .images>img[src="Klee.jpg"] {
     border-radius: 40%;
@@ -167,17 +167,21 @@
     z-index: -2;
   }
   
-  .flip-card {
+.flip-card {
   background-color: transparent;
-  left: calc(50% + 200px);
-  top: 57%;
   width: 150px;
   height: 150px;
-  border: 1px solid pink;
-  perspective: 1000px;
-  }
+  position: absolute;
+  left: calc(50% + 450px);
+  top: 57%;
+  border: 2px solid pink;
+  perspective: 1000px; 
+  z-index: 1;
+}
   
-	.flip-card-inner {
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -186,7 +190,7 @@
   transform-style: preserve-3d;
 }
 
-
+/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -212,12 +216,13 @@
   color: white;
   transform: rotateY(180deg);
 }
+  
 </style>
 
 <div class="images">
   <img src="mirror.jpeg" alt="mirror selfie.jpg">
   <img src="Thx notes.jpg" alt="thanksgiving notes from Kristy :)">
-  <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg">
+<!--   <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg"> -->
   <img src="Klee.jpg" alt="Paul Klee.jpg">
   <img src="Rene.jpg" alt="Rene Magritte.jpg">
 </div>
@@ -254,7 +259,7 @@
       <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg" style="width: 150px">
     </div>
     <div class="flip-card-back">
-      <img src="Brunch.jpg" alt="brunch.jpg" style="width: 150px" >
+      <img src="brunch.jpeg" alt="brunch.jpg" style="width: 150px" >
     </div>
   </div>
 </div>
