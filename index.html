@@ -41,6 +41,7 @@
     top: 200px;
     left: 70px;
     text-align: center;
+    z-index: 1;
   }
 
   h4 {
@@ -48,6 +49,7 @@
     text-align: center;
     top: 250px;
     left: 110px;
+    z-index: 1;
   }
 
   h5 {
@@ -66,7 +68,6 @@
     top: 370px;
     margin-left: 130px;
     font-size: 20px;
-
   }
 
   h7 {
@@ -87,6 +88,7 @@
     top: 510px;
     right: 30px;
     text-align: center;
+    z-index: 1；
   }
 
   h9 {
@@ -135,13 +137,6 @@
     top: calc(50% + 340px);
   }
 
-/*   .images>img[src="Lil Tokyo.jpg"] {
-    position: absolute;
-    width: 150px;
-    left: calc(50% + 200px);
-    top: 57%;
-  } */
-
   .images>img[src="Klee.jpg"] {
     border-radius: 40%;
     position: absolute;
@@ -150,13 +145,13 @@
     top: 92%;
   }
 
-  .images>img[src="Rene.jpg"] {
+/*   .images>img[src="Rene.jpg"] {
     border-radius: 25%;
     position: absolute;
     width: 150px;
     left: calc(50% - 25px);
     top: 125%;
-  }
+  } */
 
   figure {
     position: absolute;
@@ -176,7 +171,7 @@
   top: 57%;
   border: 2px solid pink;
   perspective: 1000px; 
-  z-index: 1;
+   z-index: -2;
 }
   
 
@@ -217,13 +212,55 @@
   transform: rotateY(180deg);
 }
   
+  .slide-Klee{
+    position: absolute;
+    width: 50%;
+    left: calc(50% + 30px);
+    top: 92%;
+  }
+  
+  .image-Klee{
+    display: block;
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+  }
+  
+  .overlay-Klee{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 40%;
+    background-color: pink;
+  	overflow: hidden;
+  	width: 150px;
+  	height: 0;
+  	transition: 0.5s;
+  }
+  
+  .slide-Klee:hover .overlay-Klee {
+  height: 100%;
+  }
+  
+  .text-Klee{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
 </style>
 
 <div class="images">
   <img src="mirror.jpeg" alt="mirror selfie.jpg">
   <img src="Thx notes.jpg" alt="thanksgiving notes from Kristy :)">
 <!--   <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg"> -->
-  <img src="Klee.jpg" alt="Paul Klee.jpg">
+<!--   <img src="Klee.jpg" alt="Paul Klee.jpg"> -->
   <img src="Rene.jpg" alt="Rene Magritte.jpg">
 </div>
 
@@ -263,6 +300,21 @@
     </div>
   </div>
 </div>
+
+<div class="slide-Klee">
+  <img src="Klee.jpg" alt="Klee.jpg" class="image-Klee">
+  <div class="overlay-Klee">
+    <div class="text-Klee">Paul Klee in Lacma</div>
+  </div>
+</div>
+
+<div class="slide-Rene">
+  <img src="Rene.jpg" alt="Rene.jpg" class="image-Rene">
+  <div class="overlay-Rene">
+    <div class="text-Rene">This is Not a Pipe by Rene</div>
+  </div>
+</div>
+
 <figure>
   <video controls width="250">
     <source src="Lil Video.mp4" type="video/mp4">
