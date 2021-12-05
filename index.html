@@ -200,11 +200,11 @@
     position: absolute;
     font-family: Georgia;
     font-weight: bold;
-    font-size: 27px;
+    font-size: 26px;
     color: purple;
     background: black;
-    top: 1110px;
-    left: 530px;
+    top: 1107px;
+    left: 532px;
     width: 270px;
     z-index: 2;
   }
@@ -370,6 +370,102 @@
     transform: rotateY(180deg);
   }
 
+  .flip-concert {
+    background-color: transparent;
+    width: 140px;
+    height: 105px;
+    position: absolute;
+    top: 1273px;
+    left: 684px;
+    border: 3px solid black;
+    perspective: 1000px;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-concert-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-concert:hover .flip-concert-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-concert-front,
+  .flip-concert-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-concert-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-concert-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-groupfie {
+    background-color: transparent;
+    width: 140px;
+    height: 105px;
+    position: absolute;
+    top: 1366px;
+    left: 528px;
+    border: 3px solid black;
+    perspective: 1000px;
+  }
+
+  /* This container is needed to position the front and back side */
+  .flip-groupfie-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-groupfie:hover .flip-groupfie-inner {
+    transform: rotateY(180deg);
+  }
+
+  /* Position the front and back side */
+  .flip-groupfie-front,
+  .flip-groupfie-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-groupfie-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  /* Style the back side */
+  .flip-groupfie-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
   .slide-Klee {
     position: absolute;
     width: 50%;
@@ -523,16 +619,27 @@
   </div>
 </div>
 
-<!-- <div class="flip-concert">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg" style="width: 150px">
+<div class="flip-concert">
+  <div class="flip-concert-inner">
+    <div class="flip-concert-front">
+      <img src="K-C.jpg" alt="Cloris at Concert.jpg" style="width: 140px">
     </div>
-    <div class="flip-card-back">
-      <img src="brunch.jpeg" alt="brunch.jpg" style="width: 150px">
+    <div class="flip-concert-back">
+      <img src="C-K.jpg" alt="Kristy at Concert." style="width: 140px">
     </div>
   </div>
-</div> -->
+</div>
+
+<div class="flip-groupfie">
+  <div class="flip-groupfie-inner">
+    <div class="flip-groupfie-front">
+      <img src="Groupfie.jpg" alt="Groupfie at Concert.jpg" style="width: 140px">
+    </div>
+    <div class="flip-groupfie-back">
+      <img src="Cloris.jpg" alt="Cloris w/ BTS." style="width: 140px">
+    </div>
+  </div>
+</div>
 
 <div class="slide-Klee">
   <img src="Klee.jpg" alt="Klee.jpg" class="image-Klee">
