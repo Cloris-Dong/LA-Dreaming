@@ -304,8 +304,8 @@
     background: var(--DL-red);
     border-radius: 50%;
     width: 140px;
-    top: 980px;
-    left: 1348px;
+    top: 985px;
+    left: 1350px;
     z-index: 2;
   }
 
@@ -322,7 +322,7 @@
     left: 50px;
   }
 
-  .flip-card {
+  .flip-food {
     background-color: transparent;
     width: 150px;
     height: 150px;
@@ -334,7 +334,7 @@
   }
 
   /* This container is needed to position the front and back side */
-  .flip-card-inner {
+  .flip-food-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -344,13 +344,13 @@
   }
 
   /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+  .flip-food:hover .flip-food-inner {
     transform: rotateY(180deg);
   }
 
   /* Position the front and back side */
-  .flip-card-front,
-  .flip-card-back {
+  .flip-food-front,
+  .flip-food-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -358,13 +358,13 @@
     backface-visibility: hidden;
   }
 
-  .flip-card-front {
+  .flip-food-front {
     background-color: #bbb;
     color: black;
   }
 
   /* Style the back side */
-  .flip-card-back {
+  .flip-food-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
@@ -512,7 +512,18 @@
   <img src="flashlight.gif" alt="flashlight.gif">
 </div>
 
-<div class="flip-card">
+<div class="flip-food">
+  <div class="flip-food-inner">
+    <div class="flip-food-front">
+      <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg" style="width: 150px">
+    </div>
+    <div class="flip-food-back">
+      <img src="brunch.jpeg" alt="brunch.jpg" style="width: 150px">
+    </div>
+  </div>
+</div>
+
+<!-- <div class="flip-concert">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="Lil Tokyo.jpg" alt="Okonomiyaki.jpg" style="width: 150px">
@@ -521,7 +532,7 @@
       <img src="brunch.jpeg" alt="brunch.jpg" style="width: 150px">
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="slide-Klee">
   <img src="Klee.jpg" alt="Klee.jpg" class="image-Klee">
